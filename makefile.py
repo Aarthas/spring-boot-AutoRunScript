@@ -7,9 +7,7 @@ import sys
 
 
 dict = {
-    'sjes-gateway-app': '20000',
-    'others': '9102',
-    'others2': '3258'
+    'sjes-gateway-app': '20000'
 }
 
 

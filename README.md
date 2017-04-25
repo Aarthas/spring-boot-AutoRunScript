@@ -12,6 +12,11 @@ sudo service xxx-1.0.0-RELEASE.jar restart
      1. 根据当前branch更新代码
      2. 查找port的端口号占用的进程pid
      3. clean chche，compile code，kill pid ，restart service
+或者在makefile.py 配置如下，就不要输入port。
+    dict = {
+     'xxx': '20000'
+    }
+测试：运行稳定。
 后续：
     1. 如果有10个spring boot 服务，每个spring boot 工程下都放置一个makefile.py,可以批量一键部署系统。
     2. 增加自动输入密码模块，用expect模块自动输入密码，不需要手输，一键启动。但需要每台服务器安装Pexpect模块。
